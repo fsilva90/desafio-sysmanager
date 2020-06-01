@@ -1,4 +1,4 @@
-package teste3;
+package desafios.teste3;
 
 /**
  * @author felipe.silva

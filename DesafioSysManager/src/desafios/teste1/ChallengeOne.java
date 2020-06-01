@@ -1,4 +1,4 @@
-package teste1;
+package desafios.teste1;
 
 /**
  * @author felipe.silva
@@ -11,17 +11,9 @@ public class ChallengeOne {
 
 	}
 
-	public static String getPrimeBiggerNumber(int numInicio, int numFinal) {
+	public static int getPrimeBiggerNumber(int numInicio, int numFinal) {
 
 		int menorNum = 0, maiorNum = 0, resultado = 0;
-
-		if (numInicio == numFinal) {
-			return "Não existe intervalo de número inteiros!";
-		} else if (numInicio < 0) {
-			return "O primeiro número inserido não pertece ao conjunto de números inteiros!";
-		} else if (numFinal < 0) {
-			return "O segundo número inserido não pertece ao conjunto de números inteiros!";
-		}
 
 		if (numInicio < numFinal) {
 			menorNum = numInicio;
@@ -46,6 +38,6 @@ public class ChallengeOne {
 					resultado = i;
 			}
 		}
-		return "Maior numero primo: " + resultado;
+		return resultado;
 	}
 }

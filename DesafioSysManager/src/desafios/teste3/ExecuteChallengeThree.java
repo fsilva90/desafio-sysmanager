@@ -1,4 +1,4 @@
-package teste3;
+package desafios.teste3;
 
 /**
  * @author felipe.silva
@@ -9,7 +9,7 @@ public class ExecuteChallengeThree {
 
 	public static void main(String[] args) {
 		
-		int i = 14400;
+		int i = 15000;
 
 		while (true) {
 			try {

@@ -1,4 +1,4 @@
-package teste2;
+package desafios.teste2;
 
 /**
  * @author felipe.silva
@@ -6,9 +6,11 @@ package teste2;
  */
 
 public class ChallengeTwo {
+	
+	private final static String alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 	public static String toEncrypt(String text, int key) {
-		String alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		
 		String criptografia = "";
 
 		for (int i = 0; i < text.length(); i++) {
@@ -24,14 +26,13 @@ public class ChallengeTwo {
 					char novaletra = alfabeto.charAt(novaposicao);
 					criptografia = criptografia + novaletra;
 				}
-
 			}
 		}
 		return criptografia;
 	}
 
 	public static String toDecrypt(String palavra, int chave) {
-		String alfabeto = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
 		String descriptografia = "";
 
 		for (int i = 0; i < palavra.length(); i++) {
@@ -48,7 +49,6 @@ public class ChallengeTwo {
 					char novaletra = alfabeto.charAt(novaposicao);
 					descriptografia = descriptografia + novaletra;
 				}
-
 			}
 		}
 		return descriptografia;
